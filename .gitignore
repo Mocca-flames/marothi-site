@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local-only project docs (kept on disk, not pushed to GitHub)
+AGENTS.md
+CLAUDE.md
+CONTENT.md
+DESIGN.md
+PLAN.md
