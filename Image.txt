@@ -1,0 +1,97 @@
+MAROTHI -- IMAGE, ICON AND SVG ASSET LIST
+==========================================
+
+1. PHOTOGRAPHY (primary visual layer)
+--------------------------------------
+Style: real, local, SME-representative. A real person holding a phone or
+using the product in a real business setting. No generic or stereotyped
+stock imagery.
+
+Sourcing: commission a local South African photographer where budget
+allows. Use curated stock (for example Nappy, or Unsplash's African/Black
+imagery collections) only as a launch placeholder.
+
+Needed shots (priority order):
+[ ] Landing page hero -- SME owner holding a phone, with a chat-style
+    interface visible on screen (generic message-bubble styling, not a
+    literal WhatsApp trademark reproduction)
+[ ] WhatsApp Bots service page -- restaurant owner and plumber, one shot
+    each, matching the two demo industries
+[ ] Professional Email service page -- business owner at a laptop, a
+    branded email visible
+[ ] Custom Software page -- business owner using a tablet or dashboard
+[ ] Websites page -- business owner viewing their new site on phone and
+    desktop
+[ ] Software and IoT Supply page -- business owner near a device or
+    dashboard screen
+[ ] Testimonial headshots (three to five, once real testimonials are
+    collected)
+
+Format and technical notes:
+- Deliver as WebP with a JPEG fallback, minimum 2x resolution for the
+  largest display size
+- Served through next/image, lazy-loaded below the fold
+- Aspect ratios: 4:5 for card imagery; hero ratio to be confirmed against
+  final layout
+
+2. ART ACCENTS (procedural, blue, painterly)
+---------------------------------------------
+Style: abstract layered blue washes -- no gradients, flat overlapping
+shapes at varying opacity -- evoking watercolour or ink rather than
+corporate flat-vector illustration.
+
+Usage rule: one accent per image or section, single corner placement,
+rotated and organic, never centred, never behind body text.
+
+Needed variants:
+[ ] Hero accent (large, roughly 140-200px footprint)
+[ ] Service card accent (smaller, roughly 100-120px footprint)
+[ ] Three to four alternate compositions so repeated sections don't look
+    identical
+[ ] Droplet/ripple SVG for the signature click micro-interaction
+    (already prototyped -- an expanding circle, stroke only, no fill)
+
+Format and technical notes:
+- Deliver as inline SVG, not raster, so colour follows the design token
+  system
+- Keep file size minimal -- these are accents, not full illustrations
+
+3. ICONS
+---------
+Icon set: Tabler Icons, outline style only (no filled variants).
+
+Already used in prototypes:
+- ti-photo            image placeholder
+- ti-check / ti-circle-check   confirmation, verified sender
+- ti-alert-triangle    spam or warning state
+- ti-mail              email
+- ti-message-circle    chat / automation (generic, not the WhatsApp logo)
+- ti-clock             time-saved messaging
+- ti-device-mobile     phone / app references
+
+Likely additional needs (confirm during build):
+[ ] ti-map-pin          location / service area
+[ ] ti-calendar         bookings
+[ ] ti-currency-dollar or a custom Rand mark   pricing
+[ ] ti-shield-check     POPIA / trust badge
+
+4. LOGO AND FAVICON
+---------------------
+[ ] Primary logo (SVG, scalable, works on light backgrounds)
+[ ] Reversed or light logo for dark or accent-coloured sections
+[ ] Favicon set (16x16, 32x32, 180x180 for iOS, 512x512 for PWA/manifest)
+[ ] Decide whether the logo itself should reference the water droplet
+    motif directly, so it reads as one language with the art accents
+
+5. WHAT TO AVOID
+-------------------
+- Flat corporate vector illustration (the style explicitly being
+  replaced)
+- Stock photography that reads as generic or international rather than
+  local South African
+- The literal WhatsApp logo or an exact reproduction of WhatsApp's UI
+  colour and style -- the chat demo uses a generic message-bubble style
+  instead
+- Autoplay video, anywhere on the site
+- Decorative gradients -- flat colour and opacity layering only, per the
+  design system
