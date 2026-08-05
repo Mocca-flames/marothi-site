@@ -11,28 +11,69 @@ Sourcing: commission a local South African photographer where budget
 allows. Use curated stock (for example Nappy, or Unsplash's African/Black
 imagery collections) only as a launch placeholder.
 
+Roles per service page (guided 11-step template, see CONTENT.md Section 3):
+- Scene-setting "pain" shot (step 02) -- the owner in the exact pain
+  moment; the emotional anchor of the page. 4:5.
+- Explainer detail (step 03) -- close crop (hands on phone, screen detail),
+  often a crop of the scene shot. 4:5.
+- Scenario cards x3 (step 04) -- one per industry, must match the demo
+  presets. 4:5.
+- Testimonial headshots (step 08) -- shared across pages. 4:5.
+- CTA "relief" background (step 11) -- same person and location as step 02,
+  now relaxed (the "after" shot); can be a second take in the same session.
+  16:9 full-bleed.
+- Alt text must describe the scene AND its narrative role (e.g. "restaurant
+  owner checking missed messages on a phone at the counter, evening light").
+
 Needed shots (priority order):
 [ ] Landing page hero -- SME owner holding a phone, with a chat-style
     interface visible on screen (generic message-bubble styling, not a
     literal WhatsApp trademark reproduction)
-[ ] WhatsApp Bots service page -- restaurant owner and plumber, one shot
-    each, matching the two demo industries
-[ ] Professional Email service page -- business owner at a laptop, a
-    branded email visible
-[ ] Custom Software page -- business owner using a tablet or dashboard
-[ ] Websites page -- business owner viewing their new site on phone and
-    desktop
-[ ] Software and IoT Supply page -- business owner near a device or
-    dashboard screen
+[ ] WhatsApp Bots scene (step 02) -- restaurant owner, phone in hand,
+    missed messages, after-hours
+[ ] WhatsApp Bots scenarios (step 04) -- restaurant, plumber, retail, one
+    shot each, matching the demo presets
+[ ] Professional Email scene (step 02) -- owner sending quotes from a free
+    gmail address while competitors land in inboxes
+[ ] Professional Email scenarios (step 04) -- plumber (quotes), accountant
+    (invoices), salon (bookings)
+[ ] Custom Software scene (step 02) -- owner buried in spreadsheets
+[ ] Custom Software scenarios (step 04) -- retail (stock), logistics,
+    cleaning
+[ ] Websites scene (step 02) -- customer on mobile data watching a slow
+    local site load
+[ ] Websites scenarios (step 04) -- restaurant, trades, salon
+[ ] Software & IoT scene (step 02) -- owner checking three different
+    systems to answer one question
+[ ] Software & IoT scenarios (step 04) -- logistics (fleet), retail
+    (stock), workshop (equipment)
+[ ] CTA "relief" shots (step 11) -- one per service (5), same owner and
+    location as the corresponding scene shot, now relaxed; 16:9
 [ ] Testimonial headshots (three to five, once real testimonials are
     collected)
+
+New Priority-1 files (16):
+  whatsapp-bots-retail
+  email-plumber, email-accountant, email-salon
+  software-retail, software-logistics, software-cleaning
+  websites-trades, websites-salon
+  iot-logistics, iot-retail, iot-workshop
+  whatsapp-bots-cta, email-cta, software-cta, websites-cta, iot-cta
+
+Priority-2 (if budget allows):
+  process-discovery, process-build, process-launch (shared across pages,
+  step 07)
+  Two extra testimonial headshots (five total)
+  Per-service explainer detail crops (four)
 
 Format and technical notes:
 - Deliver as WebP with a JPEG fallback, minimum 2x resolution for the
   largest display size
-- Served through next/image, lazy-loaded below the fold
-- Aspect ratios: 4:5 for card imagery; hero ratio to be confirmed against
-  final layout
+- Served through next/image, lazy-loaded below the fold; eager +
+  fetchpriority="high" only on the hero and first narrative image
+- Aspect ratios: 4:5 for all card imagery (scene, explainer, scenario,
+  testimonial); 16:9 for the CTA background; hero ratio to be confirmed
+  against final layout
 
 2. ART ACCENTS (procedural, blue, painterly)
 ---------------------------------------------
